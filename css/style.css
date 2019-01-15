@@ -35,6 +35,50 @@ ul{
     padding: 0;
 }
 
+/* ul li{
+    display: block;
+    width: 100%;
+} */
+
+nav a #openup {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+  } 
+    /* #hide-on-small {
+        display: none;
+    } */
+
+    nav a #openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+      }
+      nav a #openup {
+        display: block;
+        width: 100%;
+        position: relative;
+      }
+    
+    
+
 header li{
     float: left;
     display: inline;
@@ -52,6 +96,14 @@ header #branding h1{
 header nav{
     float: right;
     margin-top: 10px;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    display: block;
 }
 
 header .highlight, header .current a{
@@ -140,4 +192,31 @@ footer{
     color: #ffffff;
     background-color: #e8491d;
     text-align: center;
+}
+
+
+  /*Footer*/
+  footer .footer-cols{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+}
+
+footer .footer-cols ul {
+    list-style: none;
+    color: #ffffff;
+}
+
+footer .footer-cols ul li:first-child {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+    padding: 1rem;
 }
